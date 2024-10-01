@@ -32,8 +32,8 @@ console.log(2 ** 5 ); //32
 console.log(Math.floor(12,7)); //12
 
 
-//yukari yuvarlama: Math.Ceil:
-console.log(Math.floor(12,2)); //12
+//yukari yuvarlama: Math.ceil:
+console.log(Math.ceil(10.2)); //11
 
 //yakina yuvarlama: Math.round:
 console.log(Math.round(12.4)); //12

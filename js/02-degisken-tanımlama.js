@@ -9,11 +9,12 @@ console.log(serverName + " bu şekilde ekleme yapılabilir.");
 //veya
 serverName += " ikinci yolla ekleme";
 console.log(serverName);
+console.log(serverName,"bu şekilde üçüncü yolla eklenir. Boşluk bırakmaya gerek kalmaz.")
 // **************************************************
 
 
 // const ile değişken tanımlama
-// const password; BU KULLANIM HATALI CONST KULLANDIYSAN O SATIRDA DEĞERİ ATAYACAKSIN
+// const password; BU KULLANIM HATALI! CONST KULLANDIYSAN O SATIRDA DEĞERİ ATAYACAKSIN
 const password = "dffsdfds";
 console.log(password);
 // password += "ddsadfds";

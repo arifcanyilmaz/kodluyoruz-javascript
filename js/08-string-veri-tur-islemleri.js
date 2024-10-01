@@ -6,7 +6,7 @@ let lastName = "yilmaz"
 console.log(email.length)
 
 //n. karakteri bulma
-console.log(firstName[3]) //f olacak
+console.log(firstName[3].toLocaleUpperCase()) //f olacak
 
 // büyük harf / kücük harf
 firstName = firstName.toUpperCase()
@@ -24,7 +24,7 @@ console.log(email.slice(10)) //10'dan sonrasını al demek bu. Yani @gmail.com o
 let DOMAIN = email.slice( email.search("@")+1) // bu şekilde harmanlayabiliriz.
 console.log(DOMAIN) //gmail.com yazacak 
 
-console.log(DOMAIN.slice(0, DOMAIN.indexOf("."))) //gmail.com'da sadece gmaili almak.
+console.log(DOMAIN.slice(0,DOMAIN.indexOf(".")))//gmail.com'da sadece gmaili almak.
 
 console.log(email.slice(0,email.indexOf(lastName))) //mail üzerinde sadece firstnamei bulma.
 

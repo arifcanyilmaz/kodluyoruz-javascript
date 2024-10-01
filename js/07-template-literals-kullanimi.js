@@ -10,11 +10,12 @@ console.log("Merhaba",userName,"sitemize hoş geldin.","mail adresin:",email)
 let infoMessage = `Merhaba ${userName} sitemize hos geldin. 
 Mail adresin: ${email}
 mail adresinin uzunluğu:  ${email.length}
-kısa isminiz: ${userName[0]}.
+kısa isminiz: ${email.slice(0,4)}.
 borcunuz: ${debt += tax} TL
 gunun saat bilgisi: ${new Date().getHours()}
 `
 console.log(infoMessage)
-
+alert(infoMessage)
+document.write(infoMessage)
 //Her seferinde bu mesajı tekrardan yazmak yerine bu şekilde otomatikleştirmiş olduk.
 

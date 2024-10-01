@@ -8,13 +8,14 @@ console.log(title.innerHTML)
 
 let link = document.querySelector("ul#list>li>a")
 link.innerHTML += " Degişti"
-// console.log(link.innerHTML) artık index.htmlde yazan link bilgisi yerine değisen link
+// console.log(link.innerHTML) artık index.htmlde yazan link bilgisi yerine değisti
 //yazıyor. tekrardan consolda yazdırmaya gerek yok.
 
 
 
 let sameLink = document.querySelector('#kodluyoruzLink')
 sameLink.innerHTML = "link bir kez daha değişti"
+
 link.style.color = "red" 
 link.classList.add('btn') //bu seçilen linke class ekledik.Eğer bootstrap bağlı 
 //olsaydı artık bir buton olacaktı.

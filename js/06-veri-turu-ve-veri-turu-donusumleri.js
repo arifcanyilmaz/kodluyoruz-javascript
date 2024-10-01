@@ -22,20 +22,21 @@ let number1 = "12px"
 let number2 = "10px"
 console.log(
     "number1" , parseInt(number1),
-    //"number2" , number(number2) bu kısım hata verecek çünkü
+    //"number2" , Number(number2) bu kısım hata verecek çünkü
     //number içinde sadece sayı olan stringleri çevirir.
     //parse ise sayı ile başlıyorsa sayının bittiği yere olan kısmı çevirir.
 )
 
-//parseFloat: number ile 11.2 gibi bir sayıyı almak istediğimizde hata verir.
-//bunu parsefloat ile çevirmiş olmamız gerekir.
+
+//parseFloat ile 13.3 gibi sayıları dönüştürürüz.
 let number3 = "13.3px"
 console.log(
-    "number3" , parseFloat(number3) //parseInt ile 13 olacak.
-)
+    "number3" , parseFloat(number3) //parseInt ile 13.3 olacak.
+)//13.3 olsaydı Number kullanarak da dönüşüm sağlayabilirdik.
 
 
 //int değerden stringe dönüşüm
 let number4 = 55
 number4 = number4.toString()
 console.log(number4,typeof(number4))
+
