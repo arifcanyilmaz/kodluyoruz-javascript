@@ -34,5 +34,5 @@ function showTime(){
     document.querySelector("#myClock").innerHTML = showClock
 }
 // Her saniye güncellemeye yarıyor
-setInterval(showTime, 1000);
+setInterval(showTime,1000);
 showTime();
