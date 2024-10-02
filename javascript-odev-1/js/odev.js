@@ -1,7 +1,16 @@
-// İsim ekleme kısmı
-let name = prompt("Lutfen Adinizi Giriniz:")
-let myName = document.querySelector("#myName")
-myName.innerHTML = name
+// İsim Kısmı 
+let storedName = localStorage.getItem('name')
+
+if(!storedName){
+    let name = prompt("Lütfen Adınızı Giriniz:")
+    if(name){
+        localStorage.setItem('name',name)
+        storedName = name
+    }
+}
+
+let myName = document.querySelector('#myName')
+myName.innerHTML = storedName
 
 
 // Saat kısmı
