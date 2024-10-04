@@ -1,14 +1,13 @@
 // İsim Kısmı 
-let storedName = localStorage.getItem('name')
+let storedName = localStorage.getItem('name') 
 
 if(!storedName){
-    let name = prompt("Lütfen Adınızı Giriniz:")
-    if(name){
-        localStorage.setItem('name',name)
-        storedName = name
+    let userName = prompt("Lütfen Adınızı Giriniz:")
+    if(userName){
+        userName = localStorage.setItem('name',userName)
+        storedName = userName
     }
 }
-
 let myName = document.querySelector('#myName')
 myName.innerHTML = storedName
 

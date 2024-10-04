@@ -6,7 +6,7 @@ hello("JavaScript")
 
 const helloFuncV1 = (firstName) => { console.log(`Merhaba ${firstName}`) }
 helloFuncV1("helloFuncV1") 
-// Yanlış Kullanım Örneği
+// Yanlış/Gereksiz Kullanım Örneği
 
 
 const helloFuncV2 = firstName => console.log(`Merhaba ${firstName}`)
