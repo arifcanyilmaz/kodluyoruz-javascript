@@ -57,16 +57,6 @@ console.log("allUsers'a eklendi:", allUsers)
 let nums2 = [1,3,2,5,4]
 console.log(nums2) //1 3 2 5 4 
 console.log(nums2.sort()) //1 2 3 4 5
-nums.sort(function(a, b) { return a - b; }) // doğru sıralama bu
+nums2.sort(function(a, b) { return a - b; }) // doğru sıralama bu
 
 
-let nums = [1,2,3,4,5,6,7,8,9,10]
-nums.sort(function(a, b) { return a - b; })
-    
-for(let i = nums.length - 1; i > 0; i--){
-    if(nums[i] === nums[i - 1]){
-        nums.splice(i, 1) 
-    }
-}
-
-console.log(nums[nums.length-2])
