@@ -19,12 +19,17 @@ window.addEventListener('DOMContentLoaded',loadItemsFromLocaleStorage)
 
 
 //LocalStorageden veri silme eventi
-document.addEventListener('submit',function(event) {
-    if(event.target && event.target.id === 'deleteBtn'){
-        deleteItemsFromLocalStorage(event)}
-})
 //deleteBtn.addEventListener('submit',deleteItemsFromLocalStorage)
 
+//LocalStorage'den veriyi silme
+function deleteItemsFromLocalStorage(userName){
+    console.log("aaaaaaa",userName)
+    let items = JSON.parse(localStorage.getItem('userList'))
+    items.forEach(item => {
+        localStorage.removeItem('userList')
+    });
+    console.log('silindi')
+}
 
 //Submit basınca gelişecek olaylar
 function formHandler(event){
@@ -56,8 +61,10 @@ function addItem(userName, score, isSuccess) {
     liDOM.innerHTML = `
     <span>${userName}</span>
     <span class="badge text-bg-dark rounded-pill ms-2"> ${score}</span> 
-    <button id="deleteBtn" type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>`;
-    
+    <button id="deleteBtn${userName}" onclick="deleteItemsFromLocalStorage('${userName}')" type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>`;
+    // let deleteBtn = liDOM.getElementById('deleteBtn'+userName)
+    // deleteBtn.addEventListener('click',deleteItemsFromLocalStorage)
+
     liDOM.classList.add('list-group-item', 'list-group-item-action', 'd-flex', 'align-items-center');
     liDOM.classList.add('list-group-item-' + isSuccess);
     userListDOM.append(liDOM);
@@ -96,11 +103,3 @@ function loadItemsFromLocaleStorage(){
     });
 }
 
-//LocalStorage'den veriyi silme
-function deleteItemsFromLocalStorage(event){
-    let items = JSON.parse(localStorage.getItem('userList'))
-    items.forEach(item => {
-        localStorage.removeItem('userList')
-    });
-    console.log('silindi')
-}
