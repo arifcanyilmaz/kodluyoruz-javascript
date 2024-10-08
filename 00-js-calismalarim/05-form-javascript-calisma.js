@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded',loadItemsFromLocaleStorage)
 
 //LocalStorageden veri silme eventi
 //deleteBtn.addEventListener('submit',deleteItemsFromLocalStorage)
-
 //LocalStorage'den veriyi silme
 function deleteItemsFromLocalStorage(userName){
     console.log("aaaaaaa",userName)
