@@ -48,3 +48,11 @@ console.log(email.endsWith('.com')) // false dönecek çünkü .org ile bitiyor.
 let fullName=
 `Tam adiniz: ${firstName[0].toUpperCase()}${firstName.slice(1).toLocaleLowerCase()} ${lastName[0].toUpperCase()}${lastName.slice(1).toLocaleLowerCase()}`
 console.log(fullName)
+
+
+//Yazıyı Tersine çevirme
+let s = "arif"
+let reverseStr = s.split('').reverse().join('') 
+//split('') char olarak dizi yapar.
+//reverse() ters çevirir.
+//join('') solda tanımladığımız değişkene atar
